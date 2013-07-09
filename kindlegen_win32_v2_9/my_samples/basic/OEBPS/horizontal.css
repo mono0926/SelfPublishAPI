@@ -1,0 +1,20 @@
+/* 中見出し */
+h3.midashi_m {
+	margin : 1.4em 0 1em 1em;
+}
+
+/* 大見出し */
+h2.midashi_m {
+	margin : 1.6em 0 1.2em 1em;
+}
+
+/* 小見出し */
+h4.midashi_s {
+	margin : 1.2em 0 1em 1em;
+}
+
+/* 挿絵 */
+div.image {
+	text-align : center;
+	margin-top : 1em 0 1em 0;
+}

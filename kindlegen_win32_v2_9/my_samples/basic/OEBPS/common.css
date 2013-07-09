@@ -1,0 +1,94 @@
+*{
+	padding : 0;
+	font-size : 100%;
+	line-height : 1;
+	font-weight : nomal;
+	font-style : nomal;
+	text-decoration : none;
+}
+
+@page {
+	margin : 0.5em;
+}
+
+body {
+	font-family : "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "@ＭＳ 明朝", "@MS Mincho", serif, sans-serif;
+}
+
+tbody, thead, tfoot, tr, td, th {
+	border-style : inherit;
+	border-width : inherit;
+	border-color : inherit;
+}
+
+/* 大見出し */
+h2.midashi_m {
+	font-weight : 800;
+	font-style : normal;
+	font-size : 1.8em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 2;
+	text-align : justify;
+	color : #000000;
+	text-indent : 0px;
+}
+
+/* 中見出し */
+h3.midashi_m {
+	font-weight : 600;
+	font-style : normal;
+	font-size : 1.4em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.8;
+	text-align : justify;
+	color : #000000;
+	text-indent : 0px;
+}
+
+/* 小見出し */
+h4.midashi_s {
+	font-weight : 500;
+	font-style : normal;
+	font-size : 1.2em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.4;
+	text-align : justify;
+	color : #000000;
+	text-indent : 0px;
+}
+
+/* 改ページ */
+p.page_break{
+	page-break-after: always;
+}
+
+/* 本文 */
+p.honbun {
+	font-style : normal;
+	font-size : 1em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 2;
+	text-align : justify;
+	color : #000000;
+	text-indent : 0px;
+	margin : 0px;
+}
+
+/* 圏点 */
+span.kenten {
+	text-emphasis-style : sesame;
+	-epub-text-emphasis-style : sesame;
+	-webkit-text-emphasis-style : sesame;
+}
+
+/* ルビ全体 */
+ruby {}
+
+/* ルビ文字 */
+rt {
+	font-size: 0.5em; /* 親文字サイズの1/2 */
+}

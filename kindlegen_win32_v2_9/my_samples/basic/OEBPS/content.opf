@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" unique-identifier="bookid" version="2.0">
+	<metadata>
+		<meta name="generator" content="Adobe InDesign"/>
+		<meta name="cover" content="cover.jpg"/>
+		<dc:title>ヴィヨンの妻</dc:title>
+		<dc:creator>太宰　治</dc:creator>
+		<dc:subject></dc:subject>
+		<dc:description>ヴィヨンの妻の概要を記述できます。</dc:description>
+		<dc:publisher></dc:publisher>
+		<dc:date>2011-09-14</dc:date>
+		<dc:source></dc:source>
+		<dc:relation></dc:relation>
+		<dc:coverage></dc:coverage>
+		<dc:rights></dc:rights>
+		<dc:language>ja-JP</dc:language>
+		<dc:identifier id="bookid"></dc:identifier>
+		<meta property="page-progression-direction">rtl</meta>
+	</metadata>
+	<manifest>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="css" href="template.css" media-type="text/css"/>
+		<item id="viyon_no_tsuma" href="viyon_no_tsuma.html" media-type="application/xhtml+xml"/>
+		<item id="cover.jpg" href="images/cover.jpg" media-type="image/jpeg"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="viyon_no_tsuma"/>
+	</spine>
+</package>

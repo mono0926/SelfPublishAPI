@@ -1,0 +1,34 @@
+body {
+	writing-mode : vertical-rl;
+	-epub-writing-mode : vertical-rl;
+	-webkit-writing-mode : vertical-rl;
+}
+
+/* 大見出し */
+h2.midashi_m {
+	margin : 1em 1.6em 0 1.2em;
+}
+
+/* 中見出し */
+h3.midashi_m {
+	margin : 1em 1.4em 0 1em;
+}
+
+/* 小見出し */
+h4.midashi_s {
+	margin : 1em 1.2em 0 1em;
+}
+
+/* 縦中横 */
+span.tate {
+	writing-mode : horizontal-tb;
+	-epub-writing-mode : horizontal-tb;
+	-webkit-writing-mode : horizontal-tb;
+}
+
+/* 挿絵 */
+div.image {
+	text-align : center;
+	margin-right : 1em;
+	margin-left : 1em;
+}
