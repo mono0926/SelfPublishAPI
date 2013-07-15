@@ -33,9 +33,21 @@ namespace Mono.API.SelfPublish.Controllers
             var path = Path.Combine(HostingEnvironment.MapPath("~/published"), "fuga.txt");
             File.WriteAllText(path, json);
             var book = Book.CreateFromJson(json);
-            book.Convert(FormatType.Epub, Path.Combine(HostingEnvironment.MapPath("~/published"),"fuga.epub"));
+            var epubPath = Path.Combine(HostingEnvironment.MapPath("~/published"), "fuga.epub");
+            book.Convert(FormatType.Epub, epubPath);
             Debug.WriteLine(book);
-            return "success.";
+
+            string base64String = null;
+            using (var fs = new FileStream(epubPath,
+                               FileMode.Open,
+                               FileAccess.Read))
+            {
+                var filebytes = new byte[fs.Length];
+                fs.Read(filebytes, 0, Convert.ToInt32(fs.Length));
+                base64String = Convert.ToBase64String(filebytes);
+            }
+
+            return base64String;
         }
 
         // PUT api/values/5
