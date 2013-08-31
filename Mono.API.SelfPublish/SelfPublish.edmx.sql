@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 07/15/2013 12:11:44
--- Generated from EDMX file: C:\Users\Masayuki\Documents\Git\SelfPublishAPI\Mono.API.SelfPublish\Model1.edmx
+-- Date Created: 07/21/2013 20:22:04
+-- Generated from EDMX file: C:\Users\Masayuki\Documents\Git\SelfPublishAPI\Mono.API.SelfPublish\SelfPublish.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [self_publish];
+USE [SelfPublish];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -22,9 +22,6 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Users];
-GO
 
 -- --------------------------------------------------
 -- Creating all tables

@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Mono.API.SelfPublish.Models.Mono.API
+namespace Mono.API.SelfPublish.Models
 {
     public class SelfPublishContext : DbContext
     {
@@ -11,7 +11,7 @@ namespace Mono.API.SelfPublish.Models.Mono.API
         // code to the Application_Start method in your Global.asax file.
         // Note: this will destroy and re-create your database with every model change.
         // 
-        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Mono.API.SelfPublish.Models.Mono.API.SelfPublishContext>());
+        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Mono.API.SelfPublish.Models.SelfPublishContext>());
 
         public SelfPublishContext() : base("name=SelfPublishContext")
         {

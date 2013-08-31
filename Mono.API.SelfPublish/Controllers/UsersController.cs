@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using Mono.API.SelfPublish.Models.Mono.API;
+using Mono.API.SelfPublish.Models;
 
 namespace Mono.API.SelfPublish.Controllers
 {
@@ -64,8 +64,6 @@ namespace Mono.API.SelfPublish.Controllers
         // POST api/Users
         public HttpResponseMessage PostUser(User user)
         {
-            var accessToken = Guid.NewGuid();
-            //return Request.CreateResponse(HttpStatusCode.Created, accessToken);
             if (ModelState.IsValid)
             {
                 db.Users.Add(user);
@@ -73,7 +71,6 @@ namespace Mono.API.SelfPublish.Controllers
 
                 HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, user);
                 response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = user.Id }));
-                //response.Content = new HttpContent user.accessToken;
                 return response;
             }
             else
