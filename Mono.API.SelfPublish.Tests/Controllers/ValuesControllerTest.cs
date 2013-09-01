@@ -17,7 +17,7 @@ namespace Mono.API.SelfPublish.Tests.Controllers
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            BooksController controller = new BooksController();
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -33,7 +33,7 @@ namespace Mono.API.SelfPublish.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            BooksController controller = new BooksController();
 
             // Act
             string result = controller.Get(5);
@@ -46,10 +46,10 @@ namespace Mono.API.SelfPublish.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            BooksController controller = new BooksController();
 
             // Act
-            controller.Post("value");
+            controller.Post(null);
 
             // Assert
         }
@@ -58,7 +58,7 @@ namespace Mono.API.SelfPublish.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            BooksController controller = new BooksController();
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +70,7 @@ namespace Mono.API.SelfPublish.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            BooksController controller = new BooksController();
 
             // Act
             controller.Delete(5);

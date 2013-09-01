@@ -13,7 +13,8 @@ namespace Mono.API.SelfPublish.Models
         // 
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Mono.API.SelfPublish.Models.SelfPublishContext>());
 
-        public SelfPublishContext() : base("name=SelfPublishContext")
+        public SelfPublishContext()
+            : base("name=SelfPublishContainer")
         {
         }
 

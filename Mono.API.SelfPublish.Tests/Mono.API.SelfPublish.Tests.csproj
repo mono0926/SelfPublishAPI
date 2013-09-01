@@ -123,6 +123,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SelfPublishCoverter\SelfPublishCoverter\SelfPublishConverter.csproj">
+      <Project>{8f506c45-ae74-4915-9a8b-2797b13ae9d4}</Project>
+      <Name>SelfPublishConverter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Mono.API.SelfPublish\Mono.API.SelfPublish.csproj">
       <Project>{A7B4F38B-22D3-4037-A4BC-5A83CF066E67}</Project>
       <Name>Mono.API.SelfPublish</Name>

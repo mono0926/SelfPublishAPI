@@ -66,9 +66,9 @@ namespace Mono.API.SelfPublish.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.accessToken = Convert.ToString(Guid.NewGuid());
                 db.Users.Add(user);
                 db.SaveChanges();
-
                 HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, user);
                 response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = user.Id }));
                 return response;
