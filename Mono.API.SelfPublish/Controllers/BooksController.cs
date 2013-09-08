@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Hosting;
 using System.Web.Http;
+using Mono.App.SelfPublishConverter.Converter;
 using Mono.App.SelfPublishConverter.Models;
 
 namespace Mono.API.SelfPublish.Controllers
@@ -51,15 +52,7 @@ namespace Mono.API.SelfPublish.Controllers
                 Debug.WriteLine(book);
             }
 
-            string base64String = null;
-            using (var fs = new FileStream(filepath,
-                               FileMode.Open,
-                               FileAccess.Read))
-            {
-                var filebytes = new byte[fs.Length];
-                fs.Read(filebytes, 0, Convert.ToInt32(fs.Length));
-                base64String = Convert.ToBase64String(filebytes);
-            }
+            var base64String = SelfPublishUtil.ConvertToBase64String(filepath);
 
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, base64String);
             return response;
